@@ -1,0 +1,242 @@
+@import url("libs/normalize.min.css")
+@import url("libs/jquery.fullPage.min.css")
+@import url('http://fonts.googleapis.com/css?family=Duru+Sans')
+azul = #002050
+azul_oscuro = #01193e
+celeste = #0072c6
+blanco = white
+section#home
+	div.section
+		h1
+			height auto
+			margin 10px 0
+			font-family 'Duru Sans', sans-serif
+			font-size 3em
+			span
+				color blanco
+				padding 10px 10px 10px 30px
+				i
+					padding 0 20px 0 0
+		div.wrap
+			width 70%
+			margin 0 auto
+			text-align center
+			.circle
+				background blanco
+				border-radius 50% 50% 50% 50%
+				display inline-block
+				height 190px
+				margin 0 20px
+				width 190px
+
+	div#section0
+		#marca
+			display block
+			height auto
+			margin 0 auto
+			width 50%
+
+
+	div#section1, div#section3
+		h1
+			color celeste
+			span
+				background celeste
+				i
+					color azul
+
+	div#section2,div#section4
+		h1
+			color azul
+			span
+				background azul
+				i
+					color celeste
+
+
+	div#section1
+		div.tableCell
+			vertical-align top
+			
+			div.wrap
+				position relative
+				top 110px
+				
+				.circle:nth-child(1)
+					background url("/static/img/seccion1/ipg.png") no-repeat scroll center center blanco
+				
+				.circle:nth-child(2)
+					background url("/static/img/seccion1/iab.png") no-repeat scroll center center blanco
+				
+				p
+					color #0072C6
+					font-size 2em
+					line-height 40px
+					margin 50px 0
+					text-align justify
+
+					span
+						background celeste
+						color blanco
+						padding 0 5px
+
+	div#section2
+		div.tableCell
+			vertical-align top
+			
+			div.wrap
+				position relative
+				top 110px
+				.crl
+					display inline-block
+					vertical-align top
+					width 210px
+					.circle
+						margin 0
+					h2
+						color celeste
+						margin 40px 0 0
+					p
+						color azul
+						font-size 1.5em
+						line-height 30px
+						margin 20px 0
+						text-align center
+
+				.crl:nth-child(1) 
+					.circle
+						background no-repeat scroll center center azul_oscuro
+
+						.icono
+							background: url("/static/img/seccion2/sprite_2.png") no-repeat scroll -21px -30px transparent;
+							height: 92px;
+							margin: 46px auto 0;
+							width: 108px;
+
+						.lupa
+							background: url("/static/img/seccion2/sprite_2.png") no-repeat scroll -631px -22px rgba(0, 0, 0, 0);
+							height: 109px;
+							left: 90px;
+							position: relative;
+							top: -70px;
+							width: 108px;
+
+					.circle:hover
+						.icono
+							animation 1s steps(1, end) 0s alternate none infinite anima_icono_sem;
+							
+						.lupa
+							animation 1s  normal none infinite anima_lupa;
+
+				.crl:nth-child(2) 
+					.circle
+						background no-repeat scroll center center azul_oscuro
+
+						.icono
+							background: url("/static/img/seccion2/sprite_2.png") no-repeat scroll -175px -25px transparent;
+							height: 102px;
+							margin: 46px auto 0;
+							width: 100px; 
+
+						.lupa
+							background: url("/static/img/seccion2/sprite_2.png") no-repeat scroll -631px -178px rgba(0, 0, 0, 0);
+							height: 109px;
+							left: 90px;
+							position: relative;
+							top: -80px;
+							width: 108px;
+							transition: all 0.5s;
+
+
+					.circle:hover
+						
+						.icono
+							animation 1s steps(1, end) 0s alternate none infinite anima_icono_seo;
+
+						.lupa
+							animation 1s  normal none infinite anima_lupa;
+
+				.crl:nth-child(3) 
+					
+					.circle
+						background no-repeat scroll center center azul_oscuro
+
+						.icono
+							background: url("/static/img/seccion2/sprite_2.png") no-repeat scroll -308px -20px transparent;
+							height: 122px;
+							margin: 46px auto 0;
+							width: 136px;
+
+					.circle:hover
+						
+						.icono
+							animation 1s steps(1, end) 0s alternate none infinite anima_icono_smm;
+
+				.crl:nth-child(4) 
+					
+					.circle
+						background no-repeat scroll center center azul_oscuro
+
+						.icono
+							background: url("/static/img/seccion2/sprite_2.png") no-repeat scroll -457px -19px transparent;
+							height: 116px;
+							margin: 46px auto 0;
+							width: 137px;
+
+					.circle:hover
+						
+						.icono
+							animation 1s steps(1, end) 0s alternate none infinite anima_icono_pd;
+
+				p
+					color #0072C6
+					font-size 2em
+					line-height 40px
+					margin 50px 0
+					text-align justify
+
+					span
+						background celeste
+						color blanco
+						padding 0 5px
+
+
+@keyframes anima_icono_sem
+	0%
+		background-position: -21px -30px;
+	33.3%
+		background-position: -21px -180px;
+	66.66%
+		background-position: -21px -330px;
+
+@keyframes anima_icono_seo
+	0%
+		background-position: -175px -25px;
+	33.3%
+		background-position: -175px -176px;
+	66.66%
+		background-position: -175px -325px;
+
+@keyframes anima_icono_smm
+	0%
+		background-position: -308px -20px;
+	33.3%
+		background-position: -308px -170px;
+	66.66%
+		background-position: -308px -320px;
+
+@keyframes anima_icono_pd
+	0%
+		background-position: -457px -19px;
+	33.3%
+		background-position: -457px -169px;
+	66.66%
+		background-position: -457px -320px;
+
+@keyframes anima_lupa
+	0%
+		transition: scale(0.8);
+	50%
+		transform scale(1.2);
+	100%
+		transition: scale(1.0);

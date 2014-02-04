@@ -5,16 +5,21 @@
         <meta charset="UTF-8">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <title>{% block title %}{% endblock %}</title>
-        <link rel="stylesheet" href={% static "css/libs/normalize.css" %}>
-        <link rel="stylesheet" href={% static "css/wheelmenu.css" %}>
+        
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        {% block cabecera %}{% endblock %}
+
+		<script src={% static "js/libs/modernizr.custom.js" %}></script>
+
+		<link rel="stylesheet" href={% static "css/style.css" %}>
+
+        
 </head>
 <body>
 
-{% block content %}
-{% endblock %}
 
+{% block content %}{% endblock %}
+
+{% block cabecera %}{% endblock %}
 
 </body>
 </html>

@@ -3,6 +3,110 @@
 {% block title %}Inicio{% endblock %}
 
 {% block cabecera %}
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
 
-hola
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	<script type="text/javascript" src='{% static "js/libs/jquery.nicescroll.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "js/libs/jquery.fullPage.min.js" %}'></script>
+	<script type="text/javascript" src='{% static "js/libs/jquery.slimscroll.min.js" %}'z></script>
+	<script type="text/javascript" src='{% static "js/home.js" %}'></script>
+{% endblock %}
+
+
+
+{% block content %}
+	<section id="home">
+		
+		<article>
+			<div class="section" id="section0">
+				<div>
+					<div class="wrap">
+
+						<object id ="marca" data="/static/img/seccion0/marca_reprise2.svg" type="image/svg+xml">
+						    Tu explorador no soporta el formato SVG
+						</object>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article>
+			<div class="section" id="section1">
+				<h1><span><i class="fa fa-stack-exchange"></i>Quiénes</span> somos.-</h1>
+				<div class="slide active">
+					<div class="wrap">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<p>Somos una <span>Unidad Digital</span> de Interpublic Group of Companies (IPG) orientada a resultados, con vasta experiencia en el mercado local e internacional. Contamos con Equipos Altamente Especializados lo que nos permite entregarle <span>soluciones de avanzada a nuestros clientes.</span></p>
+					</div>
+				</div>
+				<div class="slide"><div class="wrap"></div></div>
+				<div class="slide"><div class="wrap"></div></div>
+				<div class="slide"><div class="wrap"></div></div>
+			</div>
+		</article>
+
+		<article>
+			<div class="section" id="section2">
+				<h1><span><i class="fa fa-stack-exchange"></i>Qué</span> hacemos.-</h1>
+				<div class="slide active">
+					<div class="wrap">
+						<div class="crl">
+							<div class="circle">
+								<div class="icono"></div>
+								<div class="lupa"></div>
+							</div>
+							<h2>[SEM]</h2>
+							<p>Marketing en Motores de Búsqueda</p>
+						</div>
+						<div class="crl">
+							<div class="circle">
+								<div class="icono"></div>
+								<div class="lupa"></div>
+							</div>
+							<h2>[SEO]</h2>
+							<p>Optimización en Motores de Búsqueda</p>	
+						</div>
+						<div class="crl">
+							<div class="circle">
+								<div class="icono"></div>
+							</div>
+							<h2>[SMM]</h2>
+							<p>Marketing en Redes Sociales</p>	
+						</div>
+						<div class="crl">
+							<div class="circle">
+								<div class="icono"></div>
+							</div>
+							<h2>[PD]</h2>
+							<p>Producción Digital</p>	
+						</div>
+					</div>
+				</div>
+				<div class="slide"><h2>This is an awesome plugin</h2></div>
+				<div class="slide"><h2>Which enables you to create awesome websites</h2></div>
+				<div class="slide"><h2>In the most simple way ever</h2></div>
+			</div>
+		</article>
+
+		<article>
+			<div class="section" id="section3">
+				<h1><span><i class="fa fa-stack-exchange"></i>Con Quién</span> hemos trabajado.-</h1>
+				<div class="slide active">
+					<div class="wrap">
+						sssssssssssssss
+					</div>
+				</div>
+				<div class="slide"><h2>This is an awesome plugin</h2></div>
+				<div class="slide"><h2>Which enables you to create awesome websites</h2></div>
+				<div class="slide"><h2>In the most simple way ever</h2></div>
+			</div>
+		</article>
+	</section>
+
 {% endblock %}
